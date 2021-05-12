@@ -34,7 +34,7 @@
 
 + Aichun Zhu,  Zhe Zheng,  Yaoying Huang,  Tian Wang ,  Jing Jin,  Fangqiang Hu, Gang Hua, and Hichem Snoussi. "CACrowdGAN: Cascaded Attentional Generative Adversarial Network for Crowd Counting," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2021.3075859.
 
-# 经典算法- Crowd Counting Introduction And CSRNet
+# 经典算法介绍 - CSRNet
 
 ## Introduction
 
