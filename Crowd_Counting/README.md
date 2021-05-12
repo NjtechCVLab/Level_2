@@ -28,6 +28,10 @@
 
 ![3-1](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/3-1Density%20maps%20compared%20with%20real%20results.png)
 
+![3-2](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/3-2result.png)
+
+![3-3](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/3-3result.png)
+
 Aichun Zhu,  Zhe Zheng,  Yaoying Huang,  Tian Wang ,  Jing Jin,  Fangqiang Hu, Gang Hua, and Hichem Snoussi. "CACrowdGAN: Cascaded Attentional Generative Adversarial Network for Crowd Counting," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2021.3075859.
 
 # Crowd Counting Introduction And CSRNet
