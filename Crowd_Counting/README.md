@@ -8,15 +8,15 @@
 
 解决上述挑战的最新技术主要是基于卷积神经网络（CNN），以实现准确的人群密度图生成和精确的人群计数。本文中尝试设计一种对抗训练策略，以使鉴别器能够区分难以分辨的密度图，同时引导生成器提供细粒度的高质量密度图。为实现此目的，本文提出了一个新的级联注意力生成对抗网络（CACrowdGAN），用于精确的人群计数。该网络使注意力驱动的鉴别器能够区分难以分辨的密度图，同时引导生成器生成细粒度的高质量密度图。CACrowdGAN由两个组件组成：注意力生成器和级联的注意力鉴别器。此网络的总体结构图如下图2-1所示：
 
-![图2-1](./imgs/2-1General structure.png)
+![2-1](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/2-1General%20structure.png)
 
 注意力生成器具有注意力模块和密度模块，注意力模块是为生成器使用，用于关注输入图像的人群区域，而密度模块用于提供鉴别器的注意力输入。注意力模块以及密度图模块机构图如下图2-2所示，注意力模块使用VGG-16作为前端，并通过7个卷积层构建后端网络。密度模块采用注意力输入，并具有与注意力模块相同的体系结构。
 
-![图2-2](./imgs/2-2Attention module and density module structure .png)
+![2-2](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/2-2Attention%20module%20and%20density%20module%20structure%20.png)
 
 级联的注意力鉴别器则用于合成输入图像中不同人群区域的细粒度信息，并计算每个像素的细粒度损失以训练生成器。级联的注意力鉴别器结构图如下图2-3所示，此结构中，注意力输入图像被下采样为，然后在通道维度上分别与注意力密度图和真实密度图串联，由鉴别器重建新的密度图。接着将重构的图输入到下一个鉴别器，每个鉴别器使用相同的体系结构，并且不与其他鉴别器共享参数。它从生成器中类似的前端和后端网络开始，然后是3个上采样层。MSE表示鉴别器模块中重构图和真实图之间的均方误差损失。
 
-![图2-3](./imgs/2-3Cascaded attention discriminator structure .png)
+![2-3](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/2-3Cascaded%20attention%20discriminator%20structure%20.png)
 
 综上所述，本文有以下贡献：
 1）通过在真实密度图和生成的密度图之间进行对抗训练，设计了一种用于人群计数的新颖框架。
@@ -26,7 +26,7 @@
 ## 实验结果总结
 将本文中提出的CACrowdGAN在五个流行的人群统计数据集（ShanghaiTech，WorldEXPO’10，UCSD，UCF_CC_50和UCF_QNRF）上进行实验。使用MAE，PSNR和SSIM将生成的密度图与真实结果进行比较。如下图3-1所示：（a）显示了ShanghaiTech数据集中测试集的样本。（b）表示每个图像的真实人头位置，而（c）是由头部位置生成的真实密度图。（d）是通过二值化实况密度图的注意力掩码图。（e），（f），（g）和（h）分别是CSRNet，CSRNet + GAN，CSRNet + Attention和CSRNet + Attentional GAN生成的密度图，证明了该方法在复杂场景中的有效性和鲁棒性。
 
-![图3-1](./imgs/3-1Density maps compared with real results.png)
+![3-1](https://github.com/NjtechCVLab/Level_2/blob/main/Crowd_Counting/imgs/3-1Density%20maps%20compared%20with%20real%20results.png)
 
 Aichun Zhu,  Zhe Zheng,  Yaoying Huang,  Tian Wang ,  Jing Jin,  Fangqiang Hu, Gang Hua, and Hichem Snoussi. "CACrowdGAN: Cascaded Attentional Generative Adversarial Network for Crowd Counting," in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2021.3075859.
 
