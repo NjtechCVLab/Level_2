@@ -29,12 +29,22 @@ skeleton-based action recognition by bidirectional LSTM-CNN" in Elsevier Science
 
 ## 实验结果总结
 将本文的算法在NTU RGB+D和UTD-MHAD数据集上将每个视频序列的长度设置为100帧，在SBU数据集上设置为35帧，若视频较短，则多次重复最后一帧图像。图3-1给出了关系模型和非关系模型在每个行为类别的识别效果差距，可以看到，于大多数动作类而言，关系模型由于非关系模型，尤其是那些只涉及身体部分的动作类，实验结果表明，我们提出的关系模型能够提高人体动作识别的准确率，捕捉人体动作的细微线索。
+
 ![3-1](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/2-4.png)
+
 图3-2表明，多层次模型更能全面地表示动作特征。值得一提的是，由于局部模型将网络的注意力放在了每个关节点上，更能容易捕获关节点细微的变化，因而单独测试时全局模型的识别效果更出色，而所有层次的特征融合在一起时模型既能捕获关节点细微的变化又能掌握关节点整体的变化情况。
+
 ![3-2](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/3-2.png)
+
 表3-4表明本算法提出的双向LSTM-CNN模型取得了最高的识别准确率,能够有效地挖掘关节序列中的时空信息。
+
 ![3-3](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/3-3.png)
+
 由表3-5、3-6、3-7可知：首先基于深度学习的耳朵行为识别方法在识别效果方面普遍优于使用手工特征的方法（如Lie Group）其次通过对关节点的时空依赖建模，本方法能够获取更加丰富的时空运动特征，使得识别准确率高于目前其他算法。
+
 ![3-4](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/3-4.png)
+
 ![3-5](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/3-5.png)
+
 ![3-6](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/3-6.png)
+
