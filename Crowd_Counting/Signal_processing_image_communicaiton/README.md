@@ -28,7 +28,7 @@ counting" in Elsevier ScienceDirect
 (2）除了一般的欧几里得损失外，我们还引入了交叉熵损失和自适应 密度能级损失(ADLoss)。
 (3) 该结果在五个具有挑战性的人群计数数据集(ShanghaiTech(Part_A和Part_B)、WorldEXPO'10，UCSD，UCF_CC_50)上进行了广泛的测试，该方法始终优于其他优秀的方法。
 
-## 实验结果总结
+## 三、实验结果总结
 我们在ShanghaiTech(Part_A和Part_B)数据集、UCF_CC_50数据集、UCSD数据集和 WorldExpo’10数据集上评估我们的模型。
 图3-1显示了注意力的产生映射在所有这五个数据集。 然后，我们进行了消融研究，以分析在ShanghaiTech Part_B 数据集上提出的CDADNet的配置。如表1所示，密集扩展块(DDB)模块和上下文引导模块显著提高了性能。
 
