@@ -1,6 +1,6 @@
 # 团队最新研究成果 -- Neurocomputing
 + Aichun Zhu, Qianyu Wu, Ran Cui, Tian Wang, Wenlong Hang, Gang Hua and Hichem Snoussi. "Exploring a rich spatial–temporal dependent relational model for
-skeleton-based action recognition by bidirectional LSTM-CNN" in Elsevier ScienceDirect
+skeleton-based action recognition by bidirectional LSTM-CNN" in Neurocomputing，2020
 
 ## 一、前言
 
