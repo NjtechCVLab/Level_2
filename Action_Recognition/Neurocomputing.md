@@ -32,7 +32,7 @@ skeleton-based action recognition by bidirectional LSTM-CNN" in Elsevier Science
 
 ![3-1](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/2-4.png)
 
-图3-2表明，多层次模型更能全面地表示动作特征。值得一提的是，由于局部模型将网络的注意力放在了每个关节点上，更能容易捕获关节点细微的变化，因而单独测试时全局模型的识别效果更出色，而所有层次的特征融合在一起时模型既能捕获关节点细微的变化又能掌握关节点整体的变化情况。
+表3-3表明，多层次模型更能全面地表示动作特征。值得一提的是，由于局部模型将网络的注意力放在了每个关节点上，更能容易捕获关节点细微的变化，因而单独测试时全局模型的识别效果更出色，而所有层次的特征融合在一起时模型既能捕获关节点细微的变化又能掌握关节点整体的变化情况。
 
 ![3-2](https://github.com/NjtechCVLab/Level_2/blob/main/Action_Recognition/imgs/3-2.png)
 
