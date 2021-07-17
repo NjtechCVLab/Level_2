@@ -1,6 +1,6 @@
 # 团队最新研究成果 -- Signal Processing：Image Communication
 + Aichun Zhu, Guoxiu Duan, Xiaomei Zhu, Lu Zhao, Yaoying Huang,Gang Hua and Hichem Snoussi. "CDADNet: Context-guided dense attentional dilated network for crowd
-counting" in Elsevier ScienceDirect
+counting" in Signal Processing：Image Communication，2021.
 
 ## 一、前言
 近年来，随着人群计数在流量分析和安全保证中的应用，基于图像的人群密度检测取得了重大进展。许多研究人员一直致力于探索算法和模型，以实现更好的人群计数性能。然而，现有的方法通常主要关注尺度变化或视角失真的问题。这将使这些模型能够很容易地带来背景信息，从而对尺度或背景特征的表示产生不利影响，以及只在某些特定的人群计数数据集上工作良好。如图1-1所示，可以显著削弱背景信息的影响，提高其表示尺度和上下文信息的能力。大规模的变化和复杂的背景会导致人群计数中的巨大错误。为了解 决这些问题并获得准确的计数结果，我们提出了一种新的架构，称为上下文引导的密集注意力扩展网络(CDADNet)。
